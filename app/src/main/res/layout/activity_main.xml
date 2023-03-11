@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imagepager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        app:ci_drawable="@drawable/color_radius_circle_indicator"
+        app:ci_drawable_unselected="@drawable/white_radius_circle_indicator"
+        android:layout_height="40dp"
+        app:ci_height="6dp"
+        app:ci_width="6dp"
+        android:layout_marginBottom="300dp"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+        <FrameLayout
+            android:id="@+id/frame_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/withdraw_card"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                app:cardCornerRadius="45dp">
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listen to your music then \nrelax in peace"
+                android:fontFamily="@font/interblack"
+                android:textSize="24sp"
+                android:lineSpacingExtra="6dp"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#1D1E20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music in a digital platform that allows users to access a vast collection of music from various genres and artists."
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#757B86"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Get Start Now"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="25dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/robotoregular"
+                android:background="@drawable/background_button" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
